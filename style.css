@@ -20,9 +20,10 @@ html {
 }
 
 body {
-  background-image: url(img/bg-pattern-top-desktop.svg);
-  background-size: cover;
-  background-position: top -600px left -200px;
+  background-image: url(img/bg-pattern-top-desktop.svg), url(img/bg-pattern-bottom-desktop.svg);
+  background-size: cover, cover;
+  background-repeat: no-repeat, no-repeat;
+  background-position: top -600px left -200px, bottom -150px right -200px;
 }
 
 .container {
@@ -159,7 +160,10 @@ body {
 
 @media screen and (max-width: 100rem) {
   body {
-    background-image: url(img/bg-pattern-bottom-mobile.svg),;
+    background-image: url(img/bg-pattern-top-mobile.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top -900px left -760px;
   }
 
   .container {
